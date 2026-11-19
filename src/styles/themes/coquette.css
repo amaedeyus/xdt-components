@@ -1,0 +1,57 @@
+/* Coquette Theme (Ballet Slipper Pink & Cherry Ribbon Red) */
+[data-theme="coquette"] {
+  --theme-id: "coquette";
+  --theme-name: "Coquette";
+  --theme-font: 'Playfair Display', Georgia, serif;
+  
+  --theme-bg: #FFF3F6;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #FEE8EE;
+  
+  --theme-text: #3D1F26;
+  --theme-text-muted: #8E5A66;
+  
+  --theme-radius-sm: 10px;
+  --theme-radius: 16px;
+  --theme-radius-lg: 24px;
+  
+  --theme-border-width: 1.5px;
+  --theme-border-style: solid;
+  --theme-border: #F5B8C5;
+  
+  /* Delicate lace-inspired soft pink glow */
+  --theme-shadow-surface: 0 10px 28px rgba(245, 184, 197, 0.35), 0 2px 8px rgba(178, 34, 34, 0.06), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  --theme-shadow-hover: 0 14px 36px rgba(245, 184, 197, 0.5), 0 0 0 1.5px #F5B8C5;
+  
+  --theme-primary-bg: #B22222;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 0 4px 16px rgba(178, 34, 34, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  --theme-primary-active: 0 2px 6px rgba(178, 34, 34, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  --theme-secondary-bg: #FADADD;
+  --theme-secondary-text: #B22222;
+  --theme-secondary-shadow: 0 4px 12px rgba(250, 218, 221, 0.5), inset 0 0 0 1px #F5B8C5;
+
+  --theme-outline-border: 1.5px solid #B22222;
+  --theme-outline-text: #B22222;
+  --theme-outline-bg: rgba(250, 218, 221, 0.2);
+  --theme-outline-shadow: 0 2px 8px rgba(178, 34, 34, 0.12);
+
+  --theme-ghost-hover: rgba(250, 218, 221, 0.35);
+  --theme-ghost-text: #B22222;
+
+  --theme-input-bg: #FFFDFC;
+  --theme-input-text: #3D1F26;
+  --theme-input-placeholder: #B88E98;
+  --theme-input-border: 1.5px solid #F5B8C5;
+  --theme-input-shadow: inset 0 1px 3px rgba(245, 184, 197, 0.15);
+  --theme-input-focus: 0 0 0 3px rgba(178, 34, 34, 0.18);
+
+  --theme-accent: #B22222;
+  --theme-danger: #D63031;
+  --theme-success: #2ED573;
+}
+
+[data-theme="coquette"] * {
+  font-family: var(--theme-font);
+}

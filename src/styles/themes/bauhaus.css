@@ -1,0 +1,57 @@
+/* Bauhaus Theme (Constructivist Geometric Primary Palette) */
+[data-theme="bauhaus"] {
+  --theme-id: "bauhaus";
+  --theme-name: "Bauhaus";
+  --theme-font: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --theme-bg: #EAE6DF;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #F7F5F0;
+  
+  --theme-text: #111111;
+  --theme-text-muted: #4B4B4B;
+  
+  --theme-radius-sm: 0px;
+  --theme-radius: 0px;
+  --theme-radius-lg: 0px;
+  
+  --theme-border-width: 3px;
+  --theme-border-style: solid;
+  --theme-border: #111111;
+  
+  /* Heavy geometric structural block shadow */
+  --theme-shadow-surface: 5px 5px 0px #111111;
+  --theme-shadow-hover: 7px 7px 0px #111111;
+  
+  --theme-primary-bg: #E63946;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 4px 4px 0px #111111;
+  --theme-primary-active: 1px 1px 0px #111111;
+
+  --theme-secondary-bg: #FFB703;
+  --theme-secondary-text: #111111;
+  --theme-secondary-shadow: 4px 4px 0px #111111;
+
+  --theme-outline-border: 3px solid #1D3557;
+  --theme-outline-text: #1D3557;
+  --theme-outline-bg: #FFFFFF;
+  --theme-outline-shadow: 3px 3px 0px #1D3557;
+
+  --theme-ghost-hover: rgba(29, 53, 87, 0.12);
+  --theme-ghost-text: #111111;
+
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #111111;
+  --theme-input-placeholder: #777777;
+  --theme-input-border: 3px solid #111111;
+  --theme-input-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.08);
+  --theme-input-focus: 4px 4px 0px #111111;
+
+  --theme-accent: #1D3557;
+  --theme-danger: #E63946;
+  --theme-success: #2A9D8F;
+}
+
+[data-theme="bauhaus"] * {
+  font-family: var(--theme-font);
+}

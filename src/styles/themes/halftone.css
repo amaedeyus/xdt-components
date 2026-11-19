@@ -1,0 +1,58 @@
+/* Halftone Theme (Pop-Art Comic Print & Ben-Day Dots) */
+[data-theme="halftone"] {
+  --theme-id: "halftone";
+  --theme-name: "Halftone";
+  --theme-font: 'Syne', -apple-system, sans-serif;
+  
+  --theme-bg: #FFFDF0;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #FFF4D0;
+  
+  --theme-text: #050505;
+  --theme-text-muted: #3D3D3D;
+  
+  --theme-radius-sm: 2px;
+  --theme-radius: 4px;
+  --theme-radius-lg: 8px;
+  
+  --theme-border-width: 3px;
+  --theme-border-style: solid;
+  --theme-border: #050505;
+  
+  /* Pop-art comic hard ink offset shadow */
+  --theme-shadow-surface: 5px 5px 0px #050505;
+  --theme-shadow-hover: 7px 7px 0px #050505;
+  
+  --theme-primary-bg: #EC008C;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 4px 4px 0px #050505;
+  --theme-primary-active: 1px 1px 0px #050505;
+
+  --theme-secondary-bg: #00E5FF;
+  --theme-secondary-text: #050505;
+  --theme-secondary-shadow: 4px 4px 0px #050505;
+
+  --theme-outline-border: 3px solid #050505;
+  --theme-outline-text: #050505;
+  --theme-outline-bg: #FFD600;
+  --theme-outline-shadow: 3px 3px 0px #050505;
+
+  --theme-ghost-hover: #FFD600;
+  --theme-ghost-text: #050505;
+
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #050505;
+  --theme-input-placeholder: #666666;
+  --theme-input-border: 3px solid #050505;
+  --theme-input-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.08);
+  --theme-input-focus: 4px 4px 0px #050505;
+
+  --theme-accent: #EC008C;
+  --theme-danger: #EC008C;
+  --theme-success: #00E5FF;
+}
+
+[data-theme="halftone"] * {
+  font-family: var(--theme-font);
+  font-weight: 700;
+}

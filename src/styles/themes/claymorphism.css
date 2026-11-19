@@ -1,0 +1,56 @@
+/* Claymorphism Theme */
+[data-theme="claymorphism"] {
+  --theme-id: "claymorphism";
+  --theme-name: "Claymorphism";
+  --theme-font: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --theme-bg: #E3EAF3;
+  --theme-surface: #E8EEF5;
+  --theme-surface-alt: #DEE7F0;
+  
+  --theme-text: #2D3748;
+  --theme-text-muted: #627288;
+  
+  --theme-radius-sm: 14px;
+  --theme-radius: 24px;
+  --theme-radius-lg: 32px;
+  
+  --theme-border-width: 0px;
+  --theme-border-style: solid;
+  --theme-border: transparent;
+  
+  --theme-shadow-surface: 9px 9px 18px rgba(166, 180, 200, 0.65), -9px -9px 18px rgba(255, 255, 255, 0.95), inset 3px 3px 6px rgba(255, 255, 255, 0.8), inset -3px -3px 6px rgba(166, 180, 200, 0.3);
+  --theme-shadow-hover: 12px 12px 24px rgba(166, 180, 200, 0.75), -12px -12px 24px rgba(255, 255, 255, 1), inset 3px 3px 6px rgba(255, 255, 255, 0.9), inset -3px -3px 6px rgba(166, 180, 200, 0.25);
+  
+  --theme-primary-bg: #7467EE;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 6px 6px 14px rgba(116, 103, 238, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.8), inset 3px 3px 6px rgba(255, 255, 255, 0.5), inset -3px -3px 6px rgba(50, 40, 150, 0.3);
+  --theme-primary-active: inset 3px 3px 6px rgba(40, 30, 120, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.4);
+
+  --theme-secondary-bg: #E8EEF5;
+  --theme-secondary-text: #394455;
+  --theme-secondary-shadow: 5px 5px 12px rgba(166, 180, 200, 0.6), -5px -5px 12px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8), inset -2px -2px 4px rgba(166, 180, 200, 0.3);
+
+  --theme-outline-border: 2px solid #7467EE;
+  --theme-outline-text: #5B4ED4;
+  --theme-outline-bg: rgba(255, 255, 255, 0.5);
+  --theme-outline-shadow: 4px 4px 10px rgba(166, 180, 200, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(255, 255, 255, 0.7);
+
+  --theme-ghost-hover: rgba(116, 103, 238, 0.12);
+  --theme-ghost-text: #48546A;
+
+  --theme-input-bg: #E3EAF3;
+  --theme-input-text: #2D3748;
+  --theme-input-placeholder: #8C9BAE;
+  --theme-input-border: 1px solid rgba(255, 255, 255, 0.6);
+  --theme-input-shadow: inset 4px 4px 8px rgba(166, 180, 200, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.95);
+  --theme-input-focus: inset 4px 4px 8px rgba(116, 103, 238, 0.3), inset -3px -3px 6px rgba(255, 255, 255, 0.9), 0 0 0 3px rgba(116, 103, 238, 0.25);
+
+  --theme-accent: #7467EE;
+  --theme-danger: #E5484D;
+  --theme-success: #30A46C;
+}
+
+[data-theme="claymorphism"] * {
+  font-family: var(--theme-font);
+}

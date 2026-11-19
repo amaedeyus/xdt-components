@@ -1,0 +1,59 @@
+/* Conceptual Sketch Theme (Hand-Drawn Ink Doodle on Paper) */
+[data-theme="conceptual-sketch"] {
+  --theme-id: "conceptual-sketch";
+  --theme-name: "Conceptual Sketch";
+  --theme-font: 'Caveat', cursive, sans-serif;
+  
+  --theme-bg: #F2EFE7;
+  --theme-surface: #FAF9F6;
+  --theme-surface-alt: #ECE7DA;
+  
+  --theme-text: #1A1A1A;
+  --theme-text-muted: #595959;
+  
+  /* Hand-drawn organic uneven border radii */
+  --theme-radius-sm: 180px 10px 160px 10px / 10px 160px 10px 180px;
+  --theme-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  --theme-radius-lg: 320px 20px 280px 20px / 20px 280px 20px 320px;
+  
+  --theme-border-width: 2px;
+  --theme-border-style: solid;
+  --theme-border: #1A1A1A;
+  
+  /* Pencil hatch ink offset shadow */
+  --theme-shadow-surface: 3px 4px 0px rgba(26, 26, 26, 0.5), 1px 1px 0px #1A1A1A;
+  --theme-shadow-hover: 5px 6px 0px rgba(26, 26, 26, 0.7);
+  
+  --theme-primary-bg: #1A1A1A;
+  --theme-primary-text: #FAF9F6;
+  --theme-primary-shadow: 3px 3px 0px rgba(26, 26, 26, 0.6);
+  --theme-primary-active: 1px 1px 0px #1A1A1A;
+
+  --theme-secondary-bg: #EAE6DB;
+  --theme-secondary-text: #1A1A1A;
+  --theme-secondary-shadow: 3px 3px 0px rgba(26, 26, 26, 0.5);
+
+  --theme-outline-border: 2px solid #1A1A1A;
+  --theme-outline-text: #1A1A1A;
+  --theme-outline-bg: transparent;
+  --theme-outline-shadow: 2px 2px 0px rgba(26, 26, 26, 0.4);
+
+  --theme-ghost-hover: rgba(26, 26, 26, 0.08);
+  --theme-ghost-text: #1A1A1A;
+
+  --theme-input-bg: #FAF9F6;
+  --theme-input-text: #1A1A1A;
+  --theme-input-placeholder: #8A8A8A;
+  --theme-input-border: 2px solid #1A1A1A;
+  --theme-input-shadow: inset 1px 2px 0px rgba(26, 26, 26, 0.1);
+  --theme-input-focus: 3px 3px 0px #1A1A1A;
+
+  --theme-accent: #1A1A1A;
+  --theme-danger: #C0392B;
+  --theme-success: #27AE60;
+}
+
+[data-theme="conceptual-sketch"] * {
+  font-family: var(--theme-font);
+  font-size: 1.15rem;
+}

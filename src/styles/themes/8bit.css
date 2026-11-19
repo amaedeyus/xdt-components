@@ -1,0 +1,59 @@
+/* 8-Bit Arcade Theme (NES / Retro Pixel Art Aesthetic) */
+[data-theme="8bit"] {
+  --theme-id: "8bit";
+  --theme-name: "8-Bit Arcade";
+  --theme-font: 'VT323', monospace;
+  
+  --theme-bg: #0C0C14;
+  --theme-surface: #181828;
+  --theme-surface-alt: #24243C;
+  
+  --theme-text: #FCFCFC;
+  --theme-text-muted: #8C8CA8;
+  
+  --theme-radius-sm: 0px;
+  --theme-radius: 0px;
+  --theme-radius-lg: 0px;
+  
+  --theme-border-width: 3px;
+  --theme-border-style: solid;
+  --theme-border: #FCFCFC;
+  
+  /* Stepped 8-bit pixel drop shadow */
+  --theme-shadow-surface: 4px 4px 0px #000000, 4px 4px 0px 1px #FCFCFC;
+  --theme-shadow-hover: 6px 6px 0px #000000, 6px 6px 0px 1px #FCFCFC;
+  
+  --theme-primary-bg: #E70012;
+  --theme-primary-text: #FCFCFC;
+  --theme-primary-shadow: 4px 4px 0px #000000;
+  --theme-primary-active: 1px 1px 0px #000000;
+
+  --theme-secondary-bg: #0078F8;
+  --theme-secondary-text: #FCFCFC;
+  --theme-secondary-shadow: 4px 4px 0px #000000;
+
+  --theme-outline-border: 3px solid #F8B800;
+  --theme-outline-text: #F8B800;
+  --theme-outline-bg: #181828;
+  --theme-outline-shadow: 3px 3px 0px #000000;
+
+  --theme-ghost-hover: rgba(248, 184, 0, 0.15);
+  --theme-ghost-text: #F8B800;
+
+  --theme-input-bg: #10101C;
+  --theme-input-text: #FCFCFC;
+  --theme-input-placeholder: #5A5A78;
+  --theme-input-border: 3px solid #FCFCFC;
+  --theme-input-shadow: inset 3px 3px 0px #000000;
+  --theme-input-focus: 4px 4px 0px #F8B800;
+
+  --theme-accent: #E70012;
+  --theme-danger: #E70012;
+  --theme-success: #00A800;
+}
+
+[data-theme="8bit"] * {
+  font-family: var(--theme-font);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}

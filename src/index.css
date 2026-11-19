@@ -1,0 +1,34 @@
+@import './styles/themes/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Strict showcase global styles - Space Grotesk & Inter */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0B0D12;
+  color: #F3F4F6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11141D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3345;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3E4760;
+}

@@ -1,0 +1,57 @@
+/* Japanese Matchbox Theme (Vintage Showa Woodblock & Vermilion) */
+[data-theme="japanese-matchbox"] {
+  --theme-id: "japanese-matchbox";
+  --theme-name: "Japanese Matchbox";
+  --theme-font: 'Shippori Mincho', 'Noto Serif JP', serif;
+  
+  --theme-bg: #EFE4CC;
+  --theme-surface: #F4ECD8;
+  --theme-surface-alt: #E8DDBC;
+  
+  --theme-text: #1D2951;
+  --theme-text-muted: #535F7E;
+  
+  --theme-radius-sm: 2px;
+  --theme-radius: 3px;
+  --theme-radius-lg: 4px;
+  
+  --theme-border-width: 2.5px;
+  --theme-border-style: solid;
+  --theme-border: #1D2951;
+  
+  /* Woodblock Stamp Offset Shadow */
+  --theme-shadow-surface: 4px 4px 0px #1D2951;
+  --theme-shadow-hover: 6px 6px 0px #1D2951;
+  
+  --theme-primary-bg: #C83E37;
+  --theme-primary-text: #F4ECD8;
+  --theme-primary-shadow: 3px 3px 0px #1D2951;
+  --theme-primary-active: 1px 1px 0px #1D2951;
+
+  --theme-secondary-bg: #1D2951;
+  --theme-secondary-text: #F4ECD8;
+  --theme-secondary-shadow: 3px 3px 0px #C83E37;
+
+  --theme-outline-border: 2.5px solid #1D2951;
+  --theme-outline-text: #1D2951;
+  --theme-outline-bg: #F4ECD8;
+  --theme-outline-shadow: 2px 2px 0px #1D2951;
+
+  --theme-ghost-hover: rgba(29, 41, 81, 0.12);
+  --theme-ghost-text: #1D2951;
+
+  --theme-input-bg: #FAF5E8;
+  --theme-input-text: #1D2951;
+  --theme-input-placeholder: #8C96AD;
+  --theme-input-border: 2px solid #1D2951;
+  --theme-input-shadow: inset 2px 2px 0px rgba(29, 41, 81, 0.1);
+  --theme-input-focus: 3px 3px 0px #1D2951;
+
+  --theme-accent: #C83E37;
+  --theme-danger: #A32822;
+  --theme-success: #295D3B;
+}
+
+[data-theme="japanese-matchbox"] * {
+  font-family: var(--theme-font);
+}

@@ -1,0 +1,57 @@
+/* Biomorphic Theme (Organic Cellular Terracotta & Earthy Sage) */
+[data-theme="biomorphic"] {
+  --theme-id: "biomorphic";
+  --theme-name: "Biomorphic";
+  --theme-font: 'Outfit', -apple-system, sans-serif;
+  
+  --theme-bg: #EFE7DC;
+  --theme-surface: #FAF5ED;
+  --theme-surface-alt: #E8DED1;
+  
+  --theme-text: #2D261E;
+  --theme-text-muted: #7A6F62;
+  
+  --theme-radius-sm: 14px 10px 16px 12px;
+  --theme-radius: 24px 18px 26px 20px;
+  --theme-radius-lg: 36px 24px 40px 28px;
+  
+  --theme-border-width: 1.5px;
+  --theme-border-style: solid;
+  --theme-border: #D5C5B0;
+  
+  /* Soft cellular pebble shadows */
+  --theme-shadow-surface: 0 10px 28px rgba(140, 115, 90, 0.14), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --theme-shadow-hover: 0 16px 36px rgba(140, 115, 90, 0.22);
+  
+  --theme-primary-bg: #D97757;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 0 6px 18px rgba(217, 119, 87, 0.35);
+  --theme-primary-active: 0 2px 6px rgba(217, 119, 87, 0.3);
+
+  --theme-secondary-bg: #7A9A7B;
+  --theme-secondary-text: #FFFFFF;
+  --theme-secondary-shadow: 0 6px 18px rgba(122, 154, 123, 0.35);
+
+  --theme-outline-border: 2px solid #D97757;
+  --theme-outline-text: #B85B3C;
+  --theme-outline-bg: rgba(217, 119, 87, 0.05);
+  --theme-outline-shadow: 0 2px 8px rgba(217, 119, 87, 0.12);
+
+  --theme-ghost-hover: rgba(217, 119, 87, 0.1);
+  --theme-ghost-text: #B85B3C;
+
+  --theme-input-bg: #FFFDF9;
+  --theme-input-text: #2D261E;
+  --theme-input-placeholder: #9C8E7E;
+  --theme-input-border: 1.5px solid #D5C5B0;
+  --theme-input-shadow: inset 0 2px 4px rgba(140, 115, 90, 0.08);
+  --theme-input-focus: 0 0 0 3px rgba(217, 119, 87, 0.25);
+
+  --theme-accent: #D97757;
+  --theme-danger: #C0392B;
+  --theme-success: #5B8C5A;
+}
+
+[data-theme="biomorphic"] * {
+  font-family: var(--theme-font);
+}

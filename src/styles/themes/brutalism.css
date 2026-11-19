@@ -1,0 +1,58 @@
+/* Brutalism Theme (Neo-Brutalist High Contrast & Hard Offset Shadows) */
+[data-theme="brutalism"] {
+  --theme-id: "brutalism";
+  --theme-name: "Brutalism";
+  --theme-font: 'Space Grotesk', sans-serif;
+  
+  --theme-bg: #EAEAEA;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #F2F2F2;
+  
+  --theme-text: #000000;
+  --theme-text-muted: #333333;
+  
+  --theme-radius-sm: 0px;
+  --theme-radius: 0px;
+  --theme-radius-lg: 0px;
+  
+  --theme-border-width: 3px;
+  --theme-border-style: solid;
+  --theme-border: #000000;
+  
+  /* Hard Neo-Brutalist offset box shadow */
+  --theme-shadow-surface: 5px 5px 0px #000000;
+  --theme-shadow-hover: 7px 7px 0px #000000;
+  
+  --theme-primary-bg: #D4FF00;
+  --theme-primary-text: #000000;
+  --theme-primary-shadow: 4px 4px 0px #000000;
+  --theme-primary-active: 1px 1px 0px #000000;
+
+  --theme-secondary-bg: #FF5500;
+  --theme-secondary-text: #FFFFFF;
+  --theme-secondary-shadow: 4px 4px 0px #000000;
+
+  --theme-outline-border: 3px solid #000000;
+  --theme-outline-text: #000000;
+  --theme-outline-bg: #FFFFFF;
+  --theme-outline-shadow: 3px 3px 0px #000000;
+
+  --theme-ghost-hover: #D4FF00;
+  --theme-ghost-text: #000000;
+
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #000000;
+  --theme-input-placeholder: #666666;
+  --theme-input-border: 3px solid #000000;
+  --theme-input-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.1);
+  --theme-input-focus: 4px 4px 0px #000000;
+
+  --theme-accent: #FF5500;
+  --theme-danger: #FF0033;
+  --theme-success: #00D664;
+}
+
+[data-theme="brutalism"] * {
+  font-family: var(--theme-font);
+  font-weight: 600;
+}

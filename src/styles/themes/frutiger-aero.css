@@ -1,0 +1,57 @@
+/* Frutiger Aero Theme (Mid-2000s Glossy Humanism) */
+[data-theme="frutiger-aero"] {
+  --theme-id: "frutiger-aero";
+  --theme-name: "Frutiger Aero";
+  --theme-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --theme-bg: #E3F2FD;
+  --theme-surface: rgba(255, 255, 255, 0.85);
+  --theme-surface-alt: #E8F5E9;
+  
+  --theme-text: #0D2D44;
+  --theme-text-muted: #4B6E86;
+  
+  --theme-radius-sm: 8px;
+  --theme-radius: 14px;
+  --theme-radius-lg: 20px;
+  
+  --theme-border-width: 1px;
+  --theme-border-style: solid;
+  --theme-border: rgba(255, 255, 255, 0.8);
+  
+  /* Specular top-half gloss highlight and aquatic depth */
+  --theme-shadow-surface: 0 10px 25px rgba(0, 168, 232, 0.18), 0 2px 6px rgba(126, 217, 87, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+  --theme-shadow-hover: 0 14px 32px rgba(0, 168, 232, 0.26), inset 0 1px 3px rgba(255, 255, 255, 1);
+  
+  --theme-primary-bg: linear-gradient(180deg, #42D2FD 0%, #00A8E8 49%, #0087C2 50%, #029DE0 100%);
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 0 4px 14px rgba(0, 168, 232, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(0, 70, 120, 0.4);
+  --theme-primary-active: 0 2px 6px rgba(0, 168, 232, 0.3), inset 0 2px 4px rgba(0, 70, 120, 0.5);
+
+  --theme-secondary-bg: linear-gradient(180deg, #99E57A 0%, #7ED957 49%, #68C440 50%, #75D44C 100%);
+  --theme-secondary-text: #0E3B09;
+  --theme-secondary-shadow: 0 4px 12px rgba(126, 217, 87, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  --theme-outline-border: 1.5px solid #00A8E8;
+  --theme-outline-text: #007EB5;
+  --theme-outline-bg: rgba(255, 255, 255, 0.6);
+  --theme-outline-shadow: 0 2px 8px rgba(0, 168, 232, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  --theme-ghost-hover: rgba(0, 168, 232, 0.12);
+  --theme-ghost-text: #0077AA;
+
+  --theme-input-bg: rgba(255, 255, 255, 0.9);
+  --theme-input-text: #0D2D44;
+  --theme-input-placeholder: #82A2B9;
+  --theme-input-border: 1px solid rgba(0, 168, 232, 0.4);
+  --theme-input-shadow: inset 0 2px 4px rgba(0, 168, 232, 0.08), 0 1px 2px rgba(255, 255, 255, 0.8);
+  --theme-input-focus: 0 0 0 3px rgba(0, 168, 232, 0.3), inset 0 1px 2px rgba(0, 168, 232, 0.15);
+
+  --theme-accent: #00A8E8;
+  --theme-danger: #FF5252;
+  --theme-success: #7ED957;
+}
+
+[data-theme="frutiger-aero"] * {
+  font-family: var(--theme-font);
+}

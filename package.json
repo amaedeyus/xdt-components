@@ -1,0 +1,51 @@
+{
+  "name": "xdt-components",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/xdt-components.cjs",
+  "module": "./dist/xdt-components.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/xdt-components.js",
+      "require": "./dist/xdt-components.cjs"
+    },
+    "./styles.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build",
+    "prepublishOnly": "npm run build:lib",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "^1.76.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript/typescript6": "^6.0.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.2",
+    "oxlint": "^1.90.0",
+    "postcss": "^8.5.33",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-dts": "^5.1.2"
+  }
+}

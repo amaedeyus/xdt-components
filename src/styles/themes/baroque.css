@@ -1,0 +1,57 @@
+/* Baroque Theme (Chiaroscuro Velvet Burgundy & Gilded Gold) */
+[data-theme="baroque"] {
+  --theme-id: "baroque";
+  --theme-name: "Baroque";
+  --theme-font: 'Playfair Display', Georgia, serif;
+  
+  --theme-bg: #100609;
+  --theme-surface: #1C0C13;
+  --theme-surface-alt: #27121C;
+  
+  --theme-text: #F7EFE2;
+  --theme-text-muted: #A38B75;
+  
+  --theme-radius-sm: 2px;
+  --theme-radius: 4px;
+  --theme-radius-lg: 8px;
+  
+  --theme-border-width: 1.5px;
+  --theme-border-style: solid;
+  --theme-border: #C5A059;
+  
+  /* Dramatic chiaroscuro with antique gold glow */
+  --theme-shadow-surface: 0 12px 36px rgba(0, 0, 0, 0.9), 0 0 18px rgba(197, 160, 89, 0.2), inset 0 0 0 1px rgba(197, 160, 89, 0.4);
+  --theme-shadow-hover: 0 16px 44px rgba(0, 0, 0, 0.95), 0 0 26px rgba(197, 160, 89, 0.35);
+  
+  --theme-primary-bg: linear-gradient(135deg, #E6CA8F 0%, #C5A059 50%, #9F7B34 100%);
+  --theme-primary-text: #17080E;
+  --theme-primary-shadow: 0 4px 18px rgba(197, 160, 89, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  --theme-primary-active: 0 2px 8px rgba(197, 160, 89, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  --theme-secondary-bg: #2B131E;
+  --theme-secondary-text: #E8D3A7;
+  --theme-secondary-shadow: 0 4px 14px rgba(0, 0, 0, 0.6), inset 0 0 0 1px #C5A059;
+
+  --theme-outline-border: 1.5px solid #C5A059;
+  --theme-outline-text: #C5A059;
+  --theme-outline-bg: rgba(197, 160, 89, 0.05);
+  --theme-outline-shadow: 0 2px 10px rgba(197, 160, 89, 0.15);
+
+  --theme-ghost-hover: rgba(197, 160, 89, 0.12);
+  --theme-ghost-text: #E8D3A7;
+
+  --theme-input-bg: #14080D;
+  --theme-input-text: #F7EFE2;
+  --theme-input-placeholder: #6E5B4B;
+  --theme-input-border: 1px solid rgba(197, 160, 89, 0.4);
+  --theme-input-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.7);
+  --theme-input-focus: 0 0 0 2px rgba(197, 160, 89, 0.5), inset 0 2px 6px rgba(0, 0, 0, 0.9);
+
+  --theme-accent: #C5A059;
+  --theme-danger: #9E2A2B;
+  --theme-success: #386641;
+}
+
+[data-theme="baroque"] * {
+  font-family: var(--theme-font);
+}

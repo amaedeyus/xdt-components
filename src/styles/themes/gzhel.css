@@ -1,0 +1,57 @@
+/* Gzhel Theme (Cobalt Blue & Porcelain Ceramic) */
+[data-theme="gzhel"] {
+  --theme-id: "gzhel";
+  --theme-name: "Gzhel";
+  --theme-font: 'Cormorant Garamond', 'Times New Roman', serif;
+  
+  --theme-bg: #F0F4FA;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #F4F8FD;
+  
+  --theme-text: #002266;
+  --theme-text-muted: #4B6B9B;
+  
+  --theme-radius-sm: 4px;
+  --theme-radius: 8px;
+  --theme-radius-lg: 14px;
+  
+  --theme-border-width: 2px;
+  --theme-border-style: solid;
+  --theme-border: #0038A8;
+  
+  /* Ceramic glaze gloss shadow and fine cobalt framing */
+  --theme-shadow-surface: 0 4px 20px rgba(0, 56, 168, 0.1), 0 0 0 1px #0038A8, inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  --theme-shadow-hover: 0 8px 28px rgba(0, 56, 168, 0.16), 0 0 0 2px #0038A8;
+  
+  --theme-primary-bg: #0038A8;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 0 4px 14px rgba(0, 56, 168, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  --theme-primary-active: 0 2px 6px rgba(0, 56, 168, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  --theme-secondary-bg: #FFFFFF;
+  --theme-secondary-text: #0038A8;
+  --theme-secondary-shadow: 0 2px 8px rgba(0, 56, 168, 0.12), inset 0 0 0 1.5px #0038A8;
+
+  --theme-outline-border: 2px solid #0038A8;
+  --theme-outline-text: #0038A8;
+  --theme-outline-bg: transparent;
+  --theme-outline-shadow: 0 1px 4px rgba(0, 56, 168, 0.1);
+
+  --theme-ghost-hover: rgba(0, 56, 168, 0.08);
+  --theme-ghost-text: #0038A8;
+
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #002266;
+  --theme-input-placeholder: #7E97BF;
+  --theme-input-border: 1.5px solid #0038A8;
+  --theme-input-shadow: inset 0 2px 4px rgba(0, 56, 168, 0.05), 0 1px 2px rgba(0, 56, 168, 0.05);
+  --theme-input-focus: 0 0 0 3px rgba(0, 56, 168, 0.2), inset 0 1px 2px rgba(0, 56, 168, 0.1);
+
+  --theme-accent: #0038A8;
+  --theme-danger: #C92A2A;
+  --theme-success: #2B8A3E;
+}
+
+[data-theme="gzhel"] * {
+  font-family: var(--theme-font);
+}

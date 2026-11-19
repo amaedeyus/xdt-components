@@ -1,0 +1,308 @@
+/* Core 18 Multi-Theme Architecture */
+@import './claymorphism.css';
+@import './retro-web.css';
+@import './gzhel.css';
+@import './japanese-matchbox.css';
+@import './dirty-gradients.css';
+@import './angelcore.css';
+@import './frutiger-aero.css';
+@import './aurora.css';
+@import './bauhaus.css';
+@import './baroque.css';
+@import './biomorphic.css';
+@import './8bit.css';
+@import './bohemian.css';
+@import './brutalism.css';
+@import './conceptual-sketch.css';
+@import './coquette.css';
+@import './ethereal.css';
+@import './halftone.css';
+
+/* Default fallback variables */
+:root {
+  --theme-bg: #FFFFFF;
+  --theme-surface: #F9FAFB;
+  --theme-surface-alt: #F3F4F6;
+  --theme-text: #111827;
+  --theme-text-muted: #6B7280;
+  --theme-radius-sm: 6px;
+  --theme-radius: 8px;
+  --theme-radius-lg: 12px;
+  --theme-border-width: 1px;
+  --theme-border-style: solid;
+  --theme-border: #E5E7EB;
+  --theme-shadow-surface: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --theme-shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.15);
+  --theme-primary-bg: #111827;
+  --theme-primary-text: #FFFFFF;
+  --theme-primary-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --theme-primary-active: 0 0 0 1px #111827;
+  --theme-secondary-bg: #F3F4F6;
+  --theme-secondary-text: #1F2937;
+  --theme-secondary-shadow: none;
+  --theme-outline-border: 1px solid #D1D5DB;
+  --theme-outline-text: #1F2937;
+  --theme-outline-bg: transparent;
+  --theme-outline-shadow: none;
+  --theme-ghost-hover: rgba(0, 0, 0, 0.05);
+  --theme-ghost-text: #374151;
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #111827;
+  --theme-input-placeholder: #9CA3AF;
+  --theme-input-border: 1px solid #D1D5DB;
+  --theme-input-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  --theme-input-focus: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  --theme-accent: #2563EB;
+  --theme-danger: #DC2626;
+  --theme-success: #16A34A;
+
+  /* Customizable Animation Accent / Glow Color */
+  --xdt-anim-accent: #3B82F6;
+
+  /* Customizable Placeholder Styles */
+  --xdt-input-placeholder-color: #9CA3AF;
+  --xdt-input-placeholder-font: inherit;
+  --xdt-input-placeholder-style: normal;
+
+  /* Customizable Invalid State Border */
+  --xdt-input-invalid-border: #EF4444;
+}
+
+/* Common Themed Surface */
+.theme-surface {
+  background: var(--theme-surface);
+  color: var(--theme-text);
+  border-radius: var(--theme-radius);
+  border-width: var(--theme-border-width);
+  border-style: var(--theme-border-style);
+  border-color: var(--theme-border);
+  box-shadow: var(--theme-shadow-surface);
+  text-shadow: var(--custom-text-shadow, none);
+  transition: all 0.18s ease-in-out;
+}
+
+.theme-surface:hover {
+  box-shadow: var(--theme-shadow-hover);
+}
+
+.theme-preview-wrapper {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  font-family: var(--theme-font, inherit);
+  transition: background-color 0.2s ease;
+}
+
+/* Button Themed Utilities */
+.theme-btn {
+  font-family: var(--theme-font, inherit);
+  border-radius: var(--theme-radius);
+  text-shadow: var(--custom-text-shadow, none);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.15s ease, border-color 0.15s ease, filter 0.18s ease;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.theme-btn-primary {
+  background: var(--theme-primary-bg);
+  color: var(--theme-primary-text);
+  box-shadow: var(--theme-primary-shadow);
+  border-width: var(--xdt-btn-primary-border-width, var(--theme-border-width, 1px));
+  border-style: var(--xdt-btn-primary-border-style, var(--theme-border-style, solid));
+  border-color: var(--xdt-btn-primary-border-color, var(--theme-border, transparent));
+}
+
+.theme-btn-primary:active:not(:disabled) {
+  box-shadow: var(--theme-primary-active, var(--theme-primary-shadow));
+}
+
+/* Secondary button: reads scoped --xdt-btn-secondary-* variables first (set by customizer), then falls back to theme tokens */
+.theme-btn-secondary {
+  background: var(--theme-secondary-bg);
+  color: var(--theme-secondary-text);
+  box-shadow: var(--theme-secondary-shadow, none);
+  border-width: var(--xdt-btn-secondary-border-width, var(--theme-border-width, 1px)) !important;
+  border-style: var(--xdt-btn-secondary-border-style, var(--theme-border-style, solid)) !important;
+  border-color: var(--xdt-btn-secondary-border-color, var(--theme-border, transparent)) !important;
+}
+
+.theme-btn-outline {
+  background: var(--theme-outline-bg, transparent);
+  color: var(--theme-outline-text);
+  border: var(--theme-outline-border, 1px solid var(--theme-border));
+  box-shadow: var(--theme-outline-shadow, none);
+}
+
+.theme-btn-ghost {
+  background: transparent;
+  color: var(--theme-ghost-text, var(--theme-text));
+  border: 1px solid transparent;
+}
+
+.theme-btn-ghost:hover:not(:disabled) {
+  background: var(--theme-ghost-hover);
+}
+
+/* Input Themed Utilities */
+.theme-input {
+  font-family: var(--theme-font, inherit);
+  background-color: var(--theme-input-bg);
+  color: var(--theme-input-text);
+  border: var(--theme-input-border);
+  border-radius: var(--theme-radius-sm);
+  box-shadow: var(--theme-input-shadow);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.theme-input::placeholder {
+  color: var(--xdt-input-placeholder-color, var(--theme-input-placeholder));
+  font-family: var(--xdt-input-placeholder-font, inherit);
+  font-style: var(--xdt-input-placeholder-style, normal);
+}
+
+.theme-input:focus {
+  outline: none;
+  box-shadow: var(--theme-input-focus);
+}
+
+/* Interactive Hover Animation Presets with Configurable --xdt-anim-accent */
+
+/* data-hover-anim attribute-based targeting (applied by customizer wrapper) */
+[data-hover-anim="lift"],
+.anim-hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.15s ease, border-color 0.15s ease !important;
+}
+[data-hover-anim="lift"]:hover,
+.anim-hover-lift:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-hover-anim="scale"],
+.anim-hover-scale {
+  transition: transform 0.2s ease, background-color 0.15s ease !important;
+}
+[data-hover-anim="scale"]:hover,
+.anim-hover-scale:hover {
+  transform: scale(1.05) !important;
+}
+
+[data-hover-anim="glow"],
+.anim-hover-glow {
+  transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.15s ease !important;
+}
+[data-hover-anim="glow"]:hover,
+.anim-hover-glow:hover {
+  box-shadow: 0 0 20px var(--xdt-anim-accent, var(--theme-accent, #3B82F6)) !important;
+}
+
+[data-hover-anim="neon-pulse"],
+.anim-hover-neon-pulse {
+  transition: box-shadow 0.25s ease !important;
+}
+[data-hover-anim="neon-pulse"]:hover,
+.anim-hover-neon-pulse:hover {
+  box-shadow: 0 0 14px var(--xdt-anim-accent, #3B82F6), inset 0 0 8px var(--xdt-anim-accent, #3B82F6) !important;
+}
+
+[data-hover-anim="border-highlight"],
+.anim-hover-border-highlight {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+[data-hover-anim="border-highlight"]:hover,
+.anim-hover-border-highlight:hover {
+  border-color: var(--xdt-anim-accent, #3B82F6) !important;
+  box-shadow: 0 0 12px var(--xdt-anim-accent, rgba(59, 130, 246, 0.35)) !important;
+}
+
+[data-hover-anim="shift"],
+.anim-hover-shift {
+  transition: transform 0.15s ease !important;
+}
+[data-hover-anim="shift"]:hover,
+.anim-hover-shift:hover {
+  transform: translate(3px, 3px) !important;
+}
+
+[data-hover-anim="invert"],
+.anim-hover-invert {
+  transition: filter 0.2s ease !important;
+}
+[data-hover-anim="invert"]:hover,
+.anim-hover-invert:hover {
+  filter: invert(1) !important;
+}
+
+/* Interactive Active / Click Animation Presets */
+/* data-active-anim attribute-based targeting */
+[data-active-anim="press"]:active,
+.anim-active-press:active {
+  transform: translateY(3px) scale(0.98) !important;
+}
+
+[data-active-anim="shrink"]:active,
+.anim-active-shrink:active {
+  transform: scale(0.94) !important;
+}
+
+[data-active-anim="flash"]:active,
+.anim-active-flash:active {
+  filter: brightness(1.35) !important;
+  box-shadow: 0 0 24px var(--xdt-anim-accent, #3B82F6) !important;
+}
+
+[data-active-anim="hard-push"]:active,
+.anim-active-hard-push:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: none !important;
+}
+
+/* Validation / Invalid State Animations */
+@keyframes xdtShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes xdtBorderPulse {
+  0%, 100% {
+    border-color: var(--xdt-input-invalid-border, #EF4444);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.25);
+  }
+}
+
+@keyframes xdtSubtleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes xdtFlashHighlight {
+  0%, 100% { background-color: var(--theme-input-bg); }
+  50% { background-color: rgba(239, 68, 68, 0.18); }
+}
+
+.anim-invalid-shake {
+  animation: xdtShake 0.4s ease-in-out !important;
+}
+
+.anim-invalid-pulse {
+  animation: xdtBorderPulse 1.2s infinite ease-in-out !important;
+}
+
+.anim-invalid-bounce {
+  animation: xdtSubtleBounce 0.4s ease-in-out !important;
+}
+
+.anim-invalid-flash {
+  animation: xdtFlashHighlight 0.6s ease-in-out !important;
+}

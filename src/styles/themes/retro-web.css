@@ -1,0 +1,58 @@
+/* Retro-Web Theme (Win98 / Early 2000s Webcore) */
+[data-theme="retro-web"] {
+  --theme-id: "retro-web";
+  --theme-name: "Retro-Web";
+  --theme-font: 'Tahoma', 'MS Sans Serif', 'Inter', -apple-system, sans-serif;
+  
+  --theme-bg: #008080;
+  --theme-surface: #C0C0C0;
+  --theme-surface-alt: #DFDFDF;
+  
+  --theme-text: #000000;
+  --theme-text-muted: #4A4A4A;
+  
+  --theme-radius-sm: 0px;
+  --theme-radius: 0px;
+  --theme-radius-lg: 0px;
+  
+  --theme-border-width: 2px;
+  --theme-border-style: solid;
+  --theme-border: #808080;
+  
+  /* Classic Win98 3D Bevel Outset */
+  --theme-shadow-surface: inset 1px 1px 0px #FFFFFF, inset -1px -1px 0px #000000, inset 2px 2px 0px #DFDFDF, inset -2px -2px 0px #808080, 2px 2px 0px #000000;
+  --theme-shadow-hover: inset 1px 1px 0px #FFFFFF, inset -1px -1px 0px #000000, inset 2px 2px 0px #FFFFFF, inset -2px -2px 0px #808080;
+  
+  --theme-primary-bg: #C0C0C0;
+  --theme-primary-text: #000000;
+  --theme-primary-shadow: inset 1px 1px 0px #FFFFFF, inset -1px -1px 0px #000000, inset 2px 2px 0px #DFDFDF, inset -2px -2px 0px #808080, 0 0 0 1px #000080;
+  --theme-primary-active: inset 1px 1px 0px #000000, inset -1px -1px 0px #FFFFFF, inset 2px 2px 0px #808080, inset -2px -2px 0px #DFDFDF;
+
+  --theme-secondary-bg: #C0C0C0;
+  --theme-secondary-text: #000000;
+  --theme-secondary-shadow: inset 1px 1px 0px #FFFFFF, inset -1px -1px 0px #000000, inset 2px 2px 0px #DFDFDF, inset -2px -2px 0px #808080;
+
+  --theme-outline-border: 2px solid #000080;
+  --theme-outline-text: #000080;
+  --theme-outline-bg: #C0C0C0;
+  --theme-outline-shadow: inset 1px 1px 0px #FFFFFF, inset -1px -1px 0px #808080;
+
+  --theme-ghost-hover: #000080;
+  --theme-ghost-text: #000000;
+
+  /* Classic Sunken Input Field */
+  --theme-input-bg: #FFFFFF;
+  --theme-input-text: #000000;
+  --theme-input-placeholder: #7B7B7B;
+  --theme-input-border: 1px solid #808080;
+  --theme-input-shadow: inset 1px 1px 0px #000000, inset -1px -1px 0px #FFFFFF, inset 2px 2px 0px #808080, inset -2px -2px 0px #DFDFDF;
+  --theme-input-focus: inset 1px 1px 0px #000000, inset -1px -1px 0px #FFFFFF, inset 2px 2px 0px #000080, 0 0 0 1px #000080;
+
+  --theme-accent: #000080;
+  --theme-danger: #800000;
+  --theme-success: #008000;
+}
+
+[data-theme="retro-web"] * {
+  font-family: var(--theme-font);
+}

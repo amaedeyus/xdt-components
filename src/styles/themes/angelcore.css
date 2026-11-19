@@ -1,0 +1,57 @@
+/* Angelcore Theme (Heavenly Ivory & Pale Gold) */
+[data-theme="angelcore"] {
+  --theme-id: "angelcore";
+  --theme-name: "Angelcore";
+  --theme-font: 'Cinzel', Georgia, serif;
+  
+  --theme-bg: #FAF7F2;
+  --theme-surface: #FFFFFF;
+  --theme-surface-alt: #FDFBF8;
+  
+  --theme-text: #393226;
+  --theme-text-muted: #7E725F;
+  
+  --theme-radius-sm: 10px;
+  --theme-radius: 16px;
+  --theme-radius-lg: 24px;
+  
+  --theme-border-width: 1px;
+  --theme-border-style: solid;
+  --theme-border: rgba(212, 175, 55, 0.4);
+  
+  /* Diffuse celestial glow shadows */
+  --theme-shadow-surface: 0 10px 30px rgba(212, 175, 55, 0.12), 0 2px 8px rgba(0, 0, 0, 0.03), 0 0 0 1px rgba(212, 175, 55, 0.25);
+  --theme-shadow-hover: 0 16px 40px rgba(212, 175, 55, 0.22), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
+  
+  --theme-primary-bg: #D4AF37;
+  --theme-primary-text: #2C2106;
+  --theme-primary-shadow: 0 4px 18px rgba(212, 175, 55, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  --theme-primary-active: 0 2px 6px rgba(212, 175, 55, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.15);
+
+  --theme-secondary-bg: #FFFFFF;
+  --theme-secondary-text: #6B5318;
+  --theme-secondary-shadow: 0 4px 14px rgba(212, 175, 55, 0.15), inset 0 0 0 1px rgba(212, 175, 55, 0.5);
+
+  --theme-outline-border: 1px solid #D4AF37;
+  --theme-outline-text: #735A1E;
+  --theme-outline-bg: rgba(212, 175, 55, 0.04);
+  --theme-outline-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
+
+  --theme-ghost-hover: rgba(212, 175, 55, 0.1);
+  --theme-ghost-text: #6B5318;
+
+  --theme-input-bg: #FCFBF7;
+  --theme-input-text: #393226;
+  --theme-input-placeholder: #A39682;
+  --theme-input-border: 1px solid rgba(212, 175, 55, 0.35);
+  --theme-input-shadow: inset 0 1px 3px rgba(212, 175, 55, 0.08);
+  --theme-input-focus: 0 0 0 3px rgba(212, 175, 55, 0.25), inset 0 1px 3px rgba(212, 175, 55, 0.05);
+
+  --theme-accent: #D4AF37;
+  --theme-danger: #B83A3A;
+  --theme-success: #3A8B58;
+}
+
+[data-theme="angelcore"] * {
+  font-family: var(--theme-font);
+}
